@@ -12,7 +12,11 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("digitron.fxml"));
         primaryStage.setTitle("Digitron");
-        primaryStage.setScene(new Scene(root, 200, 275));
+        Scene scene = new Scene(root, 225, 235);
+        primaryStage.setMinHeight(295);
+        primaryStage.setMinWidth(240);
+        primaryStage.setScene(scene);
+        root.getStylesheets().add("styling/definitions.css");
         primaryStage.show();
     }
 
