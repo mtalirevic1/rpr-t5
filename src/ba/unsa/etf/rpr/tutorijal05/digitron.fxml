@@ -89,8 +89,8 @@
         <Button fx:id="dotBtn"  maxHeight="30" minHeight="30" minWidth="50" mnemonicParsing="false"
                 prefHeight="9.999999999999999E22" prefWidth="9.999999999999999E22" text="." onAction="#dotClicked"/>
     </StackPane>
-    <StackPane fx:id="equalsPanel" alignment="CENTER" minHeight="65" minWidth="50" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2">
-        <Button fx:id="equalsBtn" minHeight="65" minWidth="50" mnemonicParsing="false"
+    <StackPane  fx:id="equalsPanel" alignment="CENTER" minHeight="65" minWidth="50" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2">
+        <Button fx:id="equalsBtn" minHeight="65" minWidth="50" mnemonicParsing="false" styleClass="mojiButtoni"
                 prefHeight="9.999999999999999E22" prefWidth="9.999999999999999E22" text="=" onAction="#equalsClicked"/>
     </StackPane>
     <columnConstraints>

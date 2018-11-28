@@ -68,7 +68,10 @@ public class Controller {
                 previousNumber = previousNumber  % Double.parseDouble(getOutput());
                 break;
             case "/":
-                previousNumber = previousNumber / Double.parseDouble(getOutput());
+                Double d= Double.parseDouble(getOutput());
+                if(d==0) previousNumber=null;
+                else
+                previousNumber = previousNumber / d;
                 break;
             case "X":
                 previousNumber = previousNumber * Double.parseDouble(getOutput());
@@ -123,6 +126,7 @@ public class Controller {
 
     public void equalsClicked() {
         executeOperation();
+        if(previousNumber==null) output.set(new String("infinity")); else
         output.set(Double.toString(round(previousNumber, 2)));
         operation = "=";
     }

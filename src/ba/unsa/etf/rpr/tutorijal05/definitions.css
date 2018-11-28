@@ -1,3 +1,7 @@
-#rectangle{
+/*#rectangle{
     fill:"#09b01f8d";
-}
+}*/
+
+.mojiButtoni{-fx-background-color: red}
+
+.mojiButtoni2{-fx-background-color: lightgreen}

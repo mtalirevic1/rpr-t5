@@ -16,7 +16,6 @@ public class Main extends Application {
         primaryStage.setMinHeight(295);
         primaryStage.setMinWidth(240);
         primaryStage.setScene(scene);
-        root.getStylesheets().add("styling/definitions.css");
         primaryStage.show();
     }
 
