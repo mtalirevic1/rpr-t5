@@ -11,16 +11,15 @@
 <?import javafx.scene.text.Text?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <GridPane id="grid" alignment="CENTER" hgap="5.0" minHeight="235" minWidth="225" prefHeight="235.0" prefWidth="225.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
     <stylesheets>
         <URL value="@definitions.css" />
     </stylesheets>
-    <StackPane fx:id="outputPanel" alignment="CENTER" minHeight="30.0" minWidth="225" GridPane.columnIndex="0"  GridPane.columnSpan="4" GridPane.rowIndex="0" GridPane.rowSpan="1">
-        <Label fx:id="display" text="${controller.output}" StackPane.alignment="CENTER_LEFT">
-            <StackPane.margin>
-                <Insets left="20.0" />
-            </StackPane.margin></Label>
-        <Rectangle fill="#05f51573"  pickOnBounds="true" stroke="TRANSPARENT" strokeType="INSIDE" width="100000000" height="50" StackPane.alignment="CENTER" />
+    <StackPane fx:id="outputPanel" alignment="CENTER_RIGHT" minHeight="30.0" minWidth="225" GridPane.columnIndex="0"  GridPane.columnSpan="4" GridPane.rowIndex="0" GridPane.rowSpan="1">
+        <TextField fx:id="display"  StackPane.alignment="CENTER_LEFT"  prefWidth="50" prefHeight="50"  maxWidth="Infinity">
+        </TextField>
+
         <GridPane.margin>
             <Insets bottom="5.0" top="5.0" left="5.0" right="5.0"/>
         </GridPane.margin>
